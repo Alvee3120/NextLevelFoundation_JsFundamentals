@@ -39,7 +39,7 @@ switch (true) {
 
 // ternary 
 
-let age = 10 
+let age2 = 10 
 
-age >= 18 ? console.log("voter") : console.log("not voter");
+age2 >= 18 ? console.log("voter") : console.log("not voter");
 
