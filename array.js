@@ -13,5 +13,10 @@ name.pop();
 console.log(name);
 
 
+//unshift --> add at 0 index
+name.unshift("Papaya")
+console.log(name);
 
-
+//shift --> remove from 0 index
+name.shift();
+console.log(name);
