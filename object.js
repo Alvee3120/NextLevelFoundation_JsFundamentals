@@ -29,6 +29,10 @@ user.address = {
 
 console.log(user);
 
+//Aceess specific key value
+
+console.log(user.address.District);
+console.log(user['address']['SubDistrict']); // user[`${}`]
 
 
 console.log(Object.entries(user));
