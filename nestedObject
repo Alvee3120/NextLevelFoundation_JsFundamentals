@@ -1,0 +1,15 @@
+let user = {
+  name: "alvee",
+  age: 25,
+  address: {
+    District: "Noakhali",
+    SubDistrict: "Sadar",
+    PostCode: 3804,
+  },
+  phone: "01642874989",
+};
+
+
+
+console.log(user.address.PostCode);
+console.log((user["address"]["PostCode"]));
