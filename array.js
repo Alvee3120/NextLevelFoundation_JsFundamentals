@@ -1,9 +1,17 @@
-const name  = ["alvee", "mahia" , "ovi" , "adib"] ;
+const name  = ["apple", "banana" , "orange" , "strawbery"] ;
 
 console.log(name);
 
 //push --> add element at the end
 
-name.push("orpita");
+name.push("grapes");
 console.log(name);
+
+// pop 
+
+name.pop();
+console.log(name);
+
+
+
 
