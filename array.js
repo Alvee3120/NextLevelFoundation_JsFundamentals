@@ -1,3 +1,9 @@
-const name  = ["alvee", "mahia"] ;
-const age = [25,24]
-console.log(name [0], age [0] , name [1], age [1]);
+const name  = ["alvee", "mahia" , "ovi" , "adib"] ;
+
+console.log(name);
+
+//push --> add element at the end
+
+name.push("orpita");
+console.log(name);
+
