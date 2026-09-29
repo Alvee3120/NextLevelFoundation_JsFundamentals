@@ -50,4 +50,4 @@ function processOrder(user, itemPrice, discountCode) {
 
 let user1 = { name: "Alvee", email: "alvee@gmail.com" };
 
-processOrder(user1,2000,"FLAT2r0");
+processOrder(user1,2000,"FLAT20");
