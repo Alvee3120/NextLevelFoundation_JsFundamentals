@@ -45,3 +45,4 @@ const arr = ["apple", "mango", "banana"]
 // const [,,b] = arr //third element 
  const [,m,] = arr
 console.log(m);
+

@@ -28,3 +28,13 @@ let allinfo = {
 
 
 console.log(allinfo);
+
+
+const letters = [..."Alvee"] 
+console.log(letters); //[ 'A', 'l', 'v', 'e', 'e' ]
+
+
+let numbers = [1,45,36,3,63,23,634,23] ;
+
+console.log(Math.max(numbers)); // shows NaN cause it receives one array
+console.log(Math.max(...numbers)); //shows 634 casue it receive 1,45,36.........
