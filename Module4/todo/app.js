@@ -6,8 +6,16 @@ let taskList = document.getElementById("taskList");
 
 console.log(taskInput, addBtn, taskList);
 
+function addItem(InputValue) {
+  let item = document.createElement("li");
+  item.textContent = InputValue;
+  taskList.appendChild(item)
+}
+
 taskInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    console.log("Enter Pressed", taskInput.value);
+    addItem(taskInput.value);
   }
 });
+
+addBtn.addEventListener("click", () => addItem(taskInput.value));
