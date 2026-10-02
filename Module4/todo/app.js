@@ -7,9 +7,24 @@ let taskList = document.getElementById("taskList");
 console.log(taskInput, addBtn, taskList);
 
 function addItem(InputValue) {
-  let item = document.createElement("li");
-  item.textContent = InputValue;
-  taskList.appendChild(item)
+  let li = document.createElement("li");
+  let span = document.createElement("span");
+  let btnWrapper = document.createElement("span");
+  let completeBtn = document.createElement("button");
+  let deleteBtn = document.createElement("button");
+
+  span.textContent = InputValue;
+  completeBtn.textContent = "COMPLETE";
+  deleteBtn.textContent = "DELETE";
+
+  btnWrapper.appendChild(completeBtn);
+  btnWrapper.appendChild(deleteBtn);
+
+  li.appendChild(span);
+  li.appendChild(btnWrapper);
+
+  taskList.appendChild(li);
+  taskInput.value = "";
 }
 
 taskInput.addEventListener("keydown", (e) => {
