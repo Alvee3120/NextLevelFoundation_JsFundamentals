@@ -12,3 +12,48 @@ let topSciFi = movies
   .map((m) => `${m.title}, ${m.rating}`);
 
 console.log(topSciFi);
+
+let products = [
+  {
+    id: 1,
+    title: "mouse",
+    price: 500,
+    category: "accessories",
+    instock: true,
+  },
+  {
+    id: 2,
+    title: "keyboard",
+    price: 250,
+    category: "accessories",
+    instock: true,
+  },
+  {
+    id: 3,
+    title: "monitor",
+    price: 1500,
+    category: "accessories",
+    instock: false,
+  },
+  {
+    id: 4,
+    title: "laptop",
+    price: 250,
+    category: "accessories",
+    instock: true,
+  },
+  {
+    id: 5,
+    title: "headpone",
+    price: 1200,
+    category: "accessories",
+    instock: false,
+  },
+];
+
+let instockProducts = products
+  .filter((p) => p.instock == true)
+  .sort((a, b) => a.price - b.price)
+  .reduce((total, p) => total + p.price, 0);
+
+console.log(instockProducts);
