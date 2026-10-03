@@ -15,13 +15,16 @@ function render() {
 
     let span = document.createElement("span");
     span.classList.add("task-text");
-    span.textContent = task.text;
+    span.textContent = `${task.text}     Completed: ${task.completed}`;
 
     let btnWrapper = document.createElement("span");
     btnWrapper.classList.add("task-button");
 
     let completeBtn = document.createElement("button");
     completeBtn.textContent = "complete";
+    completeBtn.addEventListener("click", () => {
+      completeTask(task.id);
+    });
 
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "delete";
@@ -56,3 +59,9 @@ function addTask() {
 }
 
 addBtn.addEventListener("click", addTask);
+
+function completeTask(id) {
+  let task = tasks.find((t) => t.id == id);
+  task.completed = !task.completed;
+  render();
+}
